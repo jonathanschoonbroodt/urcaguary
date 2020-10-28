@@ -324,18 +324,22 @@ input:disabled {
     margin-top: 1em;
   }
 }
+.card-container.-value {
+  max-width: 100%;
+  width: 320px;
+}
 .hero-container {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url("../img/header-blured.png") no-repeat, center, top;
+  background: url("../img/background-header-blured.png") no-repeat, center, top;
   background-size: 100% 100%;
 }
 .hero-container .content-container {
   width: 95%;
   height: 95%;
   padding: 2em;
-  background: url("../img/header.png") no-repeat, center, top;
+  background: url("../img//background-header.png") no-repeat, center, top;
   background-size: cover;
   margin-top: 5em;
 }
@@ -519,12 +523,14 @@ input:disabled {
 .index h1,
 .index h2 {
   font-size: 60px;
+  font-family: merriweather;
 }
 .index .section-container {
   padding-top: 10%;
 }
 .index .section-container.-project .illustration-container {
   width: 50%;
+  transform: translate(0px, 20px);
 }
 .index .section-container.-project .illustration {
   width: 100%;
@@ -533,6 +539,21 @@ input:disabled {
   max-width: 50%;
   margin-top: 2em;
   transform: translateX(-2em);
+}
+.index .section-container.-project .text-container > p {
+  margin-block-end: 0;
+}
+.index .section-container.-project .text-container > p:after {
+  display: none;
+}
+.index .section-container.-project .text-container > p:not(:last-child):after {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 50px;
+  height: 2.5px;
+  content: "";
+  display: block;
+  background: hsl(29, 40%, 54%);
 }
 @media (max-width: 640px) {
   .index .section-container.-project .illustration-container,
@@ -544,6 +565,26 @@ input:disabled {
     padding: 1em;
     transform: translate(0, -120px);
   }
+}
+.index .section-container.-values {
+  background: url("../img/background-values.png") no-repeat, center, top;
+  background-size: cover;
+  padding: 5em;
+}
+.index .section-container.-values .values-container {
+  padding-top: 5em;
+}
+.index .section-container.-coop {
+  padding: 5em 10em;
+}
+.index .section-container.-coop h3:after {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 50px;
+  height: 2.5px;
+  content: "";
+  display: block;
+  background: hsl(29, 40%, 54%);
 }
 ._hide.-always {
   display: none;
