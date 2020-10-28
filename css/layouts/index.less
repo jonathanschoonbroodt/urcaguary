@@ -1,0 +1,38 @@
+.index {
+    /* this is a trick for create "responsive" font when we are on resolutions < 640px
+    @media (max-width: @s) {
+        font-size: 3vw;
+    }
+    */
+    h1, h2 {
+        font-size: 60px;
+    }
+    .section-container {
+        padding-top: 10%;
+        &.-project {
+            .illustration {
+                &-container {
+                    width: 50%
+                }
+            }
+            .illustration {
+                width: 100%;
+            }
+            .text-container {
+                max-width: 50%;
+                margin-top: 2em;
+                transform: translateX(-2em);
+            }
+            @media (max-width: @s) {
+                .illustration-container, .text-container {
+                    max-width: 100%;
+                    width: 100%;
+                }
+                .text-container {
+                    padding: 1em;
+                    transform: translate(0, -120px);
+                }
+            }
+        }
+    }
+}

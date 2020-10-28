@@ -1,0 +1,22 @@
+// tooltip and error message
+
+.errormessage,
+.tooltip {
+    width: 100%;
+    font-size: @font-xs;
+    font-style: italic;
+    margin: .5em .5em 1em;
+
+    &.-nomarginbottom {
+        margin-bottom: 0;
+    }
+}
+
+.tooltip {
+    color: @lightblack;
+}
+
+.errormessage {
+    display: none;
+    color: @red;
+}

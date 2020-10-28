@@ -1,0 +1,41 @@
+// buttons
+
+.button {
+    display: block;
+    padding: .5em 2em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 1;
+    cursor: pointer;
+    border: none;
+    border-radius: 18px;
+    transition: .35s ease 0s;
+
+    &.-yellow {
+        background-color: @yellow;
+        color: @white;
+        &:hover {
+            background-color: @darkyellow;
+            color: @white
+        }
+    }
+
+    &.-overflow{
+        &.-hidden {
+            overflow: hidden;
+        }
+        &.-ellipsis {
+            text-overflow: ellipsis;
+        }
+    }
+
+    &.-disabled {
+        cursor: not-allowed;
+    }
+
+    &.-empty {
+        border: 1px solid;
+        border-color: inherit;
+    }
+}

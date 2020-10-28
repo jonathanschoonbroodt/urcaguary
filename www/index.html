@@ -9,80 +9,211 @@
         <meta name="author" content="Urcaguary Coopérative">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-xscale=1.0, minimum-xscale=1.0, maximum-xscale=1.0">
+        <script src="../js/functions.js"></script>
     </head>
 
-    <nav class="navbar" id="menu">
-        <div class="navbar-container">
-            <h2 class="_hide -always">Menu de navigation</h2>
-            <h1 class="navbar-brand">
-                <span class="_hide -always">Urcaguary</span>
-                <img class="logo" src="#" alt="Logo de Urcaguary">
-            </h1>
-            <ul class="navbar-list -center -h -v">
-                <li class="navbar-listelement">
-                    <a class="link" href="#" title="Afficher la section Projet">Projet</a>
-                </li>
-                <li class="navbar-listelement">
-                    <a class="link" href="#" title="Afficher la section Valeurs">Valeurs</a>
-                </li>
-                <li class="navbar-listelement">
-                    <a class="link" href="#" title="Afficher la section Coopérateurs">Coopérateurs</a>
-                </li>
-                <li class="navbar-listelement">
-                    <a class="link" href="#" title="Afficher la section Equipe">Equipe</a>
-                </li>
-                <li class="navbar-listelement">
-                    <a class="link" href="#" title="Afficher la section Contact">Contact</a>
-                </li>
-                <li class="navbar-listelement">
-                    <a class="link" href="#" title="Accéder au blog">Blog/a>
-                </li>
-            </ul>
-            <div class="navbar-burger">
-                <a href="#" class="burgerbutton-container" title="Fermer le menu">
-                    <img class="burgerbutton -opennavbar" src="../img/icons/menu/burgeropen.svg" alt="Icône d'ouverture du menu" onclick="openMenu()">
-                    <img class="burgerbutton -closenavbar" src="../img/icons/menu/burgerclose.svg" alt="Icône de fermeture du menu" onclick="closeMenu()">
-                </a>
-            </div>
-        </div>
-        <div class="smnavbar-container">
-            <ul class="smnavbar-list">
-                <li class="smnavbar-listelement">
-                    <a class="link" href="#" title="Afficher la section Projet">Projet</a>
-                </li>
-                <li class="smnavbar-listelement">
-                    <a class="link" href="#" title="Afficher la section Valeurs">Valeurs</a>
-                </li>
-                <li class="smnavbar-listelement">
-                    <a class="link" href="#" title="Afficher la section Coopérateurs">Coopérateurs</a>
-                </li>
-                <li class="smnavbar-listelement">
-                    <a class="link" href="#" title="Afficher la section Equipe">Equipe</a>
-                </li>
-                <li class="smnavbar-listelement">
-                    <a class="link" href="#" title="Afficher la section Contact">Contact</a>
-                </li>
-                <li class="smnavbar-listelement">
-                    <a class="link" href="#" title="Accéder au blog">Blog/a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
     <body>
-        <header class="hero-container _flex -center -h -v">
-            <div class="content-container _flex -column -center -v">
-                <h1 class="title _color -white">Urcaguary pour une joaillerie éthique</h1>
-                <img class="illustration" src="../img/illustrations/hero/#">
-                <!-- caution : due to _flex -column, -center -v is used for centring horizontally -->
-                <div class="text-container _flex -column -center -v">
-                    <p class="_color -white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.</p>
-                    <a href="#" class="button _width -maxwidth200px" title="Commencez">Plus d'infos</a>
+        <nav class="navbar" id="menu">
+            <div class="navbar-container _flex -spacebetween  _margin -auto">
+                <h2 class="_hide -always">Menu de navigation</h2>
+                <h1 class="navbar-brand _flex -start">
+                    <span class="_hide -always">Urcaguary</span>
+                    <img class="logo" src="../img/menu/logo.svg" alt="Logo de Urcaguary">
+                </h1>
+                <ul class="navbar-list _flex -end">
+                    <li class="navbar-listelement">
+                        <a class="link -white" href="#project" title="Afficher la section Projet">Projet</a>
+                    </li>
+                    <li class="navbar-listelement">
+                        <a class="link -white" href="#" title="Afficher la section Valeurs">Valeurs</a>
+                    </li>
+                    <li class="navbar-listelement">
+                        <a class="link -white" href="#" title="Afficher la section Coopérateurs">Coopérateurs</a>
+                    </li>
+                    <li class="navbar-listelement">
+                        <a class="link -white" href="#" title="Afficher la section Equipe">Equipe</a>
+                    </li>
+                    <li class="navbar-listelement">
+                        <a class="link -white" href="#" title="Afficher la section Contact">Contact</a>
+                    </li>
+                    <li class="navbar-listelement">
+                        <a class="link -white" href="#" title="Accéder au blog">Blog</a>
+                    </li>
+                </ul>
+                <div class="navbar-burger">
+                    <a href="#" class="burgerbutton-container" title="Fermer le menu">
+                        <img class="burgerbutton -opennavbar" src="../img/menu/burgeropen.svg" alt="Icône d'ouverture du menu" onclick="openMenu()">
+                        <img class="burgerbutton -closenavbar" src="../img/menu/burgerclose.svg" alt="Icône de fermeture du menu" onclick="closeMenu()">
+                    </a>
                 </div>
             </div>
-        </header>
+            <div class="smnavbar-container">
+                <ul class="smnavbar-list">
+                    <li class="smnavbar-listelement">
+                        <a class="link -white" href="#project" title="Afficher la section Projet" onclick="closeMenuAfterClickToAnchor()">Projet</a>
+                    </li>
+                    <li class="smnavbar-listelement">
+                        <a class="link -white" href="#values" title="Afficher la section Valeurs" onclick="closeMenuAfterClickToAnchor()">Valeurs</a>
+                    </li>
+                    <li class="smnavbar-listelement">
+                        <a class="link -white" href="#coop" title="Afficher la section Coopérateurs" onclick="closeMenuAfterClickToAnchor()">Coopérateurs</a>
+                    </li>
+                    <li class="smnavbar-listelement">
+                        <a class="link -white" href="#team" title="Afficher la section Equipe" onclick="closeMenuAfterClickToAnchor()">Equipe</a>
+                    </li>
+                    <li class="smnavbar-listelement">
+                        <a class="link -white" href="#contact" title="Afficher la section Contact" onclick="closeMenuAfterClickToAnchor()">Contact</a>
+                    </li>
+                    <li class="smnavbar-listelement">
+                        <a class="link -white" href="#" title="Accéder au blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="wrapper-layout">
+            <div class="index">
+                <header class="hero-container _flex -center -h -v" id="hero">
+                    <div class="content-container _flex -column -center -h -start">
+                        <h1 class="_color -white">Urcaguary</h1>
+                        <p class="_color -white">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        </p>
+                        <a href="#" class="button -yellow _width -maxwidth200px" title="Commencez">Plus d'infos</a>
+                    </div>
+                </header>
+
+                <main>
+                    <section class="section-container -project _color -bgdarkgreen" id="project">
+                        <div class="_flex -wrap">
+                            <div class="illustration-container">
+                                <img src="../img/illustration-projet.png" class="illustration" alt="Illustration du projet Urcaguary">
+                            </div>
+                            <div class="text-container _flex -column">
+                                <h2 class="_color -white">Notre projet</h2>
+                                <p class="_color -white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est laborum.
+                                </p>
+                                <p class="_color -white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                    </section>
+                    <!-- <section class="section-container -values _color -bgwhite" id="values">
+                        <h2 class="_color -white">Nos valeurs</h2>
+                        <div class="values-container _flex -wrap">
+                            <div class="card-container -value _flex -column">
+                                <img class="icon -l" src="#" alt="Icône valeurs {{Nom de la valeur}}">
+                                <h3 class="title -value">Lorem ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo
+                                    consequat.</p>
+                            </div>
+                            <div class="card-container -value _flex -column">
+                                <img class="icon -l" src="#" alt="Icône valeurs {{Nom de la valeur}}">
+                                <h3 class="title -value">Lorem ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo
+                                    consequat.</p>
+                            </div>
+                            <div class="card-container -value _flex -column">
+                                <img class="icon -l" src="#" alt="Icône valeurs {{Nom de la valeur}}">
+                                <h3 class="title -value">Lorem ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo
+                                    consequat.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section-container -coop _color -bgdarkgreen" class="_flex -column -wrap" id="coop">
+                        <h2 class="_color -white">Devenir coopérateur</h2>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                        </ul>
+                        <div class="_flex -wrap _with -maxwidth300px">
+                            <a class="button" href="#">Pdf de présentation</a>
+                            <a class="button" href="#">Je deviens coopérateur</a>
+                        </div>
+                        <a class="link -underline" href="#">Télécharger le business-plan</a>
+                    </section>
+                    <section class="section-container -team" id="team">
+                        <h2 class="_color -white">Equipe</h2>
+                    </section>
+                    <section class="section-container -contact" id="contact">
+                        <h2 class="_color -white">Contact</h2>
+                    </section> -->
+                </main>
+                <!-- <footer class="footer _color -bgwhite">
+                    <h2 class="_hide -always">Pied de page</h2>
+                    <div class="footer-container _flex -wrap _margin -auto">
+                        <div class="col-container -about">
+                            <h3 class="_hide -always">A propos de Urcaguary</h3>
+                            <img class="logo" src="../img/logo/logo.svg" alt="Logo de Urcaguary">
+                            <p class="_color -white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                ut
+                                aliquip ex ea commodo consequat.</p>
+                            <div class="col-container -plan">
+                                <h3 class="title"><span class="_hide -always">Plan du </span>Site</h3>
+                                <nav>
+                                    <ul class="footer-list">
+                                        <li class="footer-listelement">
+                                            <a href="#" class="link -red" title="Afficher la page Gestion">Gestion</a>
+                                        </li>
+                                        <li class="footer-listelement">
+                                            <a href="#" class="link -red" title="Afficher la page promotion">Promotion</a>
+                                        </li>
+                                        <li class="footer-listelement">
+                                            <a href="#" class="link -red" title="Afficher la page catalogue">Catalogue</a>
+                                        </li>
+                                        <li class="footer-listelement">
+                                            <a href="#" class="link -red" title="Afficher la page d'aide">Aide</a>
+                                        </li>
+                                        <li class="footer-listelement">
+                                            <a href="#" class="link -red" title="Afficher la page equipe">Equipe</a>
+                                        </li>
+                                        <li class="footer-listelement">
+                                            <a href="#" class="link -red" title="Afficher la page partenaires">Partenaires</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-container -newsletter">
+                                <h3 class="title _color -white">Suivre notre projet</h3>
+                                <div class="_flex -column">
+                                    <div class="_flex -row -wrap">
+                                        <input class="input -blueborder -postright" type="mail" placeholder="johndoe@gmail.com" id="example" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                                        <button class="button -blue" type="submit"><img class="icon" src="../img/icons/fields/send.svg"></button>
+                                        <div class="errormessage">Le champs doit contenir une adresse mail valide. Vérifiez que l'adresse contienne un "@" et un ".extension".</div>
+                                    </div>
+                                    <div class="tooltip">Insérez votre adresse mail</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copyright-container _flex">
+                            <div class="_flex -start">
+                                Urcaguary - website made with ❤️ by Jonathan Schoonbroodt and Christian Mon
+                            </div>
+                            <div class="_flex -end">
+                                <div class="icons-container _flex">
+                                    <div class="icon-container">
+                                        <a href="#" title="Accéder à la page Facebook de Urcaguary"><img class="icon" src="../img/icons/social/facebook.svg" alt="Icône Facebook"></a>
+                                    </div>
+                                    <div class="icon-container">
+                                        <a href="#" title="Accéder à la page Instagram de Urcaguary"><img class="icon" src="../img/icons/social/instagram.svg" alt="Icône Instagram"></a>
+                                    </div>
+                                    <div class="icon-container">
+                                        <a href="#" title="Accéder à la page Instagram de Urcaguary"><img class="icon" src="../img/icons/social/linkedin.svg" alt="Icône linkedin"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </footer> -->
+            </div>
+        </div>
     </body>
 
 </html>

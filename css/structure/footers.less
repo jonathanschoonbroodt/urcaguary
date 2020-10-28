@@ -1,0 +1,88 @@
+// footer
+
+.footer {
+    &-container {
+        max-width: @l;
+        padding: 2.5em;
+        margin-top: 5em;
+
+        .col-container {
+            .title {
+                font-size: @font-m;
+                margin-top: 1em;
+                margin-bottom: .75em;
+            }
+        }
+
+        &.-about {
+            width: 100%;
+            max-width: 300px;
+            padding-right: 5%;
+            @media (max-width: @m + 20px) {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .logo {
+                width: 150px;
+                @media (max-width: 280px) {
+                    display: none;
+                }
+            }
+
+            .about {
+                margin-top: 2em;
+                margin-bottom: 2em;
+                max-width: 450px;
+                text-align: justify;
+                // use same value than footer-link for font size
+                font-size: @font-xs;
+            }
+        }
+
+        &.-plan {
+            width: 100px;
+
+            .footer-list {
+                padding-left: 0;
+                line-height: 2;
+
+                .link {
+                    font-size: @font-xs;
+                }
+            }
+        }
+
+        &.-newsletter {
+            width: 250px;
+            @media (max-width: 320px) {
+                display: none;
+            }
+
+            .input {
+                width: 150px;
+                font-size: @font-xs;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                border-right: 0;
+            }
+
+            .button {
+                width: 50px;
+                padding: 0;
+                border-radius: 0;
+            }
+        }
+    }
+
+    .copyright-container {
+        padding: 1em;
+        font-size: @font-xs;
+        text-align: center;
+        text-decoration: none;
+
+        address {
+            font-style: inherit;
+        }
+    }
+}
