@@ -3,6 +3,34 @@
 .card-container {
     &.-value {
         max-width: 100%;
-        width: 320px;
+        width: 420px;
+        margin: 2em;
+
+        > h3 {
+            &:after {
+                margin-top: 2em;
+                margin-right: auto;
+                margin-left: auto;
+                // separation line
+                width: 2em;
+                height: 1px;
+                content: "";
+                display: flex;
+                justify-content: center;
+                background: @brown;
+            }
+        }
+    }
+
+    &.-team {
+        max-width: 100%;
+        width: 200px;
+        height: 200px;
+        margin: 2em;
+
+        > .link {
+            font-size: @font-xs;
+            margin-top: 1em;
+        }
     }
 }
