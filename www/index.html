@@ -19,7 +19,7 @@
                 <h2 class="_hide -always">Menu de navigation</h2>
                 <h1 class="navbar-brand _flex -start">
                     <span class="_hide -always">Urcaguary</span>
-                    <img class="logo" src="../img/menu/logo.svg" alt="Logo de Urcaguary">
+                    <img class="logo" src="../img/logo.svg" alt="Logo de Urcaguary">
                 </h1>
                 <ul class="navbar-list _flex -end">
                     <li class="navbar-listelement">
@@ -75,7 +75,7 @@
             <div class="index">
                 <header class="hero-container _flex -center -h -v" id="hero">
                     <div class="content-container _flex -column -center -h -start">
-                        <h1 class="_color -white">Urcaguary, pour une joaillerie éthique</h1>
+                        <h1 class="title -nopaddingbottom _color -white">Urcaguary, pour une joaillerie éthique</h1>
                         <!--
                             <p class="_color -white">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
@@ -89,10 +89,11 @@
                     <section class="section-container -project _color -bgdarkgreen" id="project">
                         <div class="_flex -wrap">
                             <div class="illustration-container">
+                                <!-- <div class="illustration"></div> -->
                                 <img src="../img/illustration-projet.png" class="illustration" alt="Illustration de la section projet d'Urcaguary">
                             </div>
                             <div class="text-container _flex -column">
-                                <h2 class="_color -white">Notre projet</h2>
+                                <h2 class="title _color -white">Notre projet</h2>
                                 <p class="_color -white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                                     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                                     officia deserunt mollit anim id est laborum.
@@ -105,7 +106,7 @@
                         </div>
                     </section>
                     <section class="section-container -values _color -bgwhite" id="values">
-                        <h2 class="_color -white _text -center">Nos valeurs</h2>
+                        <h2 class="title _color -white _text -center">Nos valeurs</h2>
                         <div class="values-container _flex -wrap -center -h -v">
                             <div class="card-container -value _flex -column -center -h -v _text -center">
                                 <img class="icon -l" src="../img/icons/icons-value.svg" alt="Icône valeurs {{Nom de la valeur}}">
@@ -136,7 +137,7 @@
                     <section class="section-container -coop _color -bgdarkgreen" id="coop">
                         <div class="content-container _flex">
                             <div class="text-container _flex -column -wrap">
-                                <h2 class="_color -white">Devenir coopérateur</h2>
+                                <h2 class="title _color -white">Devenir coopérateur</h2>
                                 <ul class="bulletpoint-list">
                                     <li class="bulletpoint-listelement _color -white">Lorem ipsum dolor sit amet, consectetur adipisicing</li>
                                     <li class="bulletpoint-listelement _color -white">Lorem ipsum dolor sit amet, consectetur adipisicing</li>
@@ -147,7 +148,7 @@
                                     <a class="button -yellow" href="#">Pdf de présentation</a>
                                     <a class="button -yellow" href="#">Je deviens coopérateur</a>
                                 </div>
-                                <a class="link -underline _color -white _text -center" href="#">Télécharger le business-plan</a>
+                                <a class="link -underline _color -white" href="#">Télécharger le business-plan</a>
                             </div>
                             <div class="illustration-container">
                                 <img src="../img/illustration-coop.png" class="illustration" alt="Illustration de la section coopérateur d'Urcaguary">
@@ -155,78 +156,100 @@
                         </div>
                     </section>
                     <section class="section-container -team _flex -column -center -h -v _color -bgdarkgreen" id="team">
-                        <h2 class="_color -white">L'équipe</h2>
+                        <h2 class="title _color -white">L'équipe</h2>
                         <div class="teammembers-container _flex -wrap -center -h -v">
-                            <div class="card-container -team _flex -column -center -h -v _text -center _color -bgyellow">
-                                <h3 class="title _color -white">John Doe</h3>
-                                <a class="link -underline _color -white" href="mailto:johndoe@example.com" title="Contacter John Doe par email">johndoe@example.com</a>
-                                <a class="link -underline _color -white" href="tel:0032472027685" title="Contacter John Doe par téléphone">+32 472/02.76.85</a>
+                            <div class="card-container -team _flex -column -center -h -v _text -center">
+                                <div class="shape-outer -rhombus">
+                                    <div class="shape-inner -rhombus _flex -column -center -h -v" style="background: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop&crop=faces') no-repeat center;">
+                                        <h3 class="title _color -white">John Doe</h3>
+                                        <a class="link -underline _color -white" href="mailto:johndoe@example.com" title="Contacter John Doe par email">johndoe@example.com</a>
+                                        <a class="link -underline _color -white" href="tel:0032472027685" title="Contacter John Doe par téléphone">+32 472/02.76.85</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-container -team _flex -column -center -h -v _text -center _color -bgyellow">
-                                <h3 class="title _color -white">John Doe</h3>
-                                <a class="link -underline _color -white" href="mailto:johndoe@example.com" title="Contacter John Doe par email">johndoe@example.com</a>
-                                <a class="link -underline _color -white" href="tel:0032472027685" title="Contacter John Doe par téléphone">+32 472/02.76.85</a>
+                            <div class="card-container -team _flex -column -center -h -v _text -center">
+                                <div class="shape-outer -rhombus">
+                                    <div class="shape-inner -rhombus _flex -column -center -h -v" style="background: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop&crop=faces') no-repeat center;">
+                                        <h3 class="title _color -white">John Doe</h3>
+                                        <a class="link -underline _color -white" href="mailto:johndoe@example.com" title="Contacter John Doe par email">johndoe@example.com</a>
+                                        <a class="link -underline _color -white" href="tel:0032472027685" title="Contacter John Doe par téléphone">+32 472/02.76.85</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-container -team _flex -column -center -h -v _text -center _color -bgyellow">
-                                <h3 class="title _color -white">John Doe</h3>
-                                <a class="link -underline _color -white" href="mailto:johndoe@example.com" title="Contacter John Doe par email">johndoe@example.com</a>
-                                <a class="link -underline _color -white" href="tel:0032472027685" title="Contacter John Doe par téléphone">+32 472/02.76.85</a>
+                            <div class="card-container -team _flex -column -center -h -v _text -center">
+                                <div class="shape-outer -rhombus">
+                                    <div class="shape-inner -rhombus _flex -column -center -h -v" style="background: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop&crop=faces') no-repeat center;">
+                                        <h3 class="title _color -white">John Doe</h3>
+                                        <a class="link -underline _color -white" href="mailto:johndoe@example.com" title="Contacter John Doe par email">johndoe@example.com</a>
+                                        <a class="link -underline _color -white" href="tel:0032472027685" title="Contacter John Doe par téléphone">+32 472/02.76.85</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-container -team _flex -column -center -h -v _text -center _color -bgyellow">
-                                <h3 class="title _color -white">John Doe</h3>
-                                <a class="link -underline _color -white" href="mailto:johndoe@example.com" title="Contacter John Doe par email">johndoe@example.com</a>
-                                <a class="link -underline _color -white" href="tel:0032472027685" title="Contacter John Doe par téléphone">+32 472/02.76.85</a>
+                            <div class="card-container -team _flex -column -center -h -v _text -center">
+                                <div class="shape-outer -rhombus">
+                                    <div class="shape-inner -rhombus _flex -column -center -h -v" style="background: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop&crop=faces') no-repeat center;">
+                                        <h3 class="title _color -white">John Doe</h3>
+                                        <a class="link -underline _color -white" href="mailto:johndoe@example.com" title="Contacter John Doe par email">johndoe@example.com</a>
+                                        <a class="link -underline _color -white" href="tel:0032472027685" title="Contacter John Doe par téléphone">+32 472/02.76.85</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-container -team _flex -column -center -h -v _text -center _color -bgyellow">
-                                <h3 class="title _color -white">John Doe</h3>
-                                <a class="link -underline _color -white" href="mailto:johndoe@example.com" title="Contacter John Doe par email">johndoe@example.com</a>
-                                <a class="link -underline _color -white" href="tel:0032472027685" title="Contacter John Doe par téléphone">+32 472/02.76.85</a>
+                            <div class="card-container -team _flex -column -center -h -v _text -center">
+                                <div class="shape-outer -rhombus">
+                                    <div class="shape-inner -rhombus _flex -column -center -h -v" style="background: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop&crop=faces') no-repeat center;">
+                                        <h3 class="title _color -white">John Doe</h3>
+                                        <a class="link -underline _color -white" href="mailto:johndoe@example.com" title="Contacter John Doe par email">johndoe@example.com</a>
+                                        <a class="link -underline _color -white" href="tel:0032472027685" title="Contacter John Doe par téléphone">+32 472/02.76.85</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="shape-outer rhombus">
-                        	<div class="shape-inner rhombus"></div>
-                        </div>
                     </section>
-                    <section class="section-container -contact" id="contact">
-                        <h2 class="_color -white">Contact</h2>
+                    <section class="section-container -contact _flex -column -center -h -v _color -bgdarkgreen" id="contact">
+                        <h2 class="title _hide -always">Contact</h2>
+                        <div class="card-container -contact _flex -column -center -h -v _text -center _color -bgyellow">
+                            <h3 class="title _color -white">Contactez-nous !</h3>
+                            <a class="link -underline _color -white" href="mailto:johndoe@example.com" title="Contacter Urcaguary par email">hello@urcaguary.eu</a>
+                        </div>
                     </section>
                 </main>
-                <footer class="footer _color -bgwhite">
+                <footer class="footer _color -bgdarkergreen">
                     <h2 class="_hide -always">Pied de page</h2>
-                    <div class="footer-container _flex -wrap _margin -auto">
-                        <div class="col-container -about">
+                    <div class="footer-container _flex -wrap -spacebetween _margin -auto">
+                        <div class="col-container -about _color -white">
                             <h3 class="_hide -always">A propos de Urcaguary</h3>
-                            <img class="logo" src="../img/logo/logo.svg" alt="Logo de Urcaguary">
-                            <p class="_color -white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            <img class="logo" src="../img/logo.svg" alt="Logo de Urcaguary">
+                            <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                                 ut
                                 aliquip ex ea commodo consequat.</p>
-                            <div class="col-container -plan">
-                                <h3 class="title"><span class="_hide -always">Plan du </span>Site</h3>
-                                <nav>
-                                    <ul class="footer-list">
-                                        <li class="footer-listelement">
-                                            <a href="#" class="link -red" title="Afficher la page Gestion">Gestion</a>
-                                        </li>
-                                        <li class="footer-listelement">
-                                            <a href="#" class="link -red" title="Afficher la page promotion">Promotion</a>
-                                        </li>
-                                        <li class="footer-listelement">
-                                            <a href="#" class="link -red" title="Afficher la page catalogue">Catalogue</a>
-                                        </li>
-                                        <li class="footer-listelement">
-                                            <a href="#" class="link -red" title="Afficher la page d'aide">Aide</a>
-                                        </li>
-                                        <li class="footer-listelement">
-                                            <a href="#" class="link -red" title="Afficher la page equipe">Equipe</a>
-                                        </li>
-                                        <li class="footer-listelement">
-                                            <a href="#" class="link -red" title="Afficher la page partenaires">Partenaires</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-container -newsletter">
-                                <h3 class="title _color -white">Suivre notre projet</h3>
+                        </div>
+                        <div class="col-container -plan  _color -white">
+                            <h3 class="title">Plan du Site</h3>
+                            <nav>
+                                <ul class="footer-list">
+                                    <li class="footer-listelement">
+                                        <a class="link -white" href="#project" title="Afficher la section Projet">Projet</a>
+                                    </li>
+                                    <li class="footer-listelement">
+                                        <a class="link -white" href="#values" title="Afficher la section Valeurs">Valeurs</a>
+                                    </li>
+                                    <li class="footer-listelement">
+                                        <a class="link -white" href="#coop" title="Afficher la section Coopérateurs">Coopérateurs</a>
+                                    </li>
+                                    <li class="footer-listelement">
+                                        <a class="link -white" href="#team" title="Afficher la section Equipe">Equipe</a>
+                                    </li>
+                                    <li class="footer-listelement">
+                                        <a class="link -white" href="#contact" title="Afficher la section Contact">Contact</a>
+                                    </li>
+                                    <li class="footer-listelement">
+                                        <a class="link -white" href="#" title="Accéder au blog">Blog</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-container -newsletter  _color -white">
+                            <h3 class="title">Suivre notre projet</h3>
+                            <!--
                                 <div class="_flex -column">
                                     <div class="_flex -row -wrap">
                                         <input class="input -blueborder -postright" type="mail" placeholder="johndoe@gmail.com" id="example" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
@@ -235,22 +258,30 @@
                                     </div>
                                     <div class="tooltip">Insérez votre adresse mail</div>
                                 </div>
-                            </div>
+                            -->
                         </div>
-                        <div class="copyright-container _flex">
-                            <div class="_flex -start">
-                                Urcaguary - website made with ❤️ by Jonathan Schoonbroodt and Christian Mon
+                    </div>
+                    <div class="copyright-container _color -bgdarkestgreen -white">
+                        <div class="content-container _flex -spacebetween -wrap -center -v">
+                            <div class="content-subcontainer _flex -center -h -v">
+                                Urcaguary &copy;
                             </div>
-                            <div class="_flex -end">
+                            <div class="content-subcontainer _flex -center -h -v">
                                 <div class="icons-container _flex">
                                     <div class="icon-container">
-                                        <a href="#" title="Accéder à la page Facebook de Urcaguary"><img class="icon" src="../img/icons/social/facebook.svg" alt="Icône Facebook"></a>
+                                        <a href="#" title="Accéder à la page Facebook de Urcaguary">
+                                            <img class="icon" src="../img/icons//facebook.svg" alt="Icône Facebook">
+                                        </a>
                                     </div>
                                     <div class="icon-container">
-                                        <a href="#" title="Accéder à la page Instagram de Urcaguary"><img class="icon" src="../img/icons/social/instagram.svg" alt="Icône Instagram"></a>
+                                        <a href="#" title="Accéder à la page Instagram de Urcaguary">
+                                            <img class="icon" src="../img/icons/instagram.svg" alt="Icône Instagram">
+                                        </a>
                                     </div>
                                     <div class="icon-container">
-                                        <a href="#" title="Accéder à la page Instagram de Urcaguary"><img class="icon" src="../img/icons/social/linkedin.svg" alt="Icône linkedin"></a>
+                                        <a href="#" title="Accéder à la page Instagram de Urcaguary">
+                                            <img class="icon" src="../img/icons/linkedin.svg" alt="Icône linkedin">
+                                        </a>
                                     </div>
                                 </div>
                             </div>

@@ -1,0 +1,38 @@
+/* https://codepen.io/GeorgePark/pen/ZoaRrV */
+
+.shape {
+    &-inner,
+    &-outer {
+        width: 300px;
+        height: 300px;
+
+        .-rhombus {
+            -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+    }
+
+    &-outer {
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    &-inner {
+        // background-color: @yellow;
+        background-size: cover;
+        margin: auto;
+
+        .link,
+        .title {
+            display: none;
+        }
+
+        &:hover {
+            background: @yellow!important; // overide background-url in html
+
+            .link,
+            .title {
+                display: flex;
+            }
+        }
+    }
+}

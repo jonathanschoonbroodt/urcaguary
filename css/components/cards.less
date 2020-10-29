@@ -22,15 +22,40 @@
         }
     }
 
+    &.-contact,
     &.-team {
         max-width: 100%;
         width: 200px;
         height: 200px;
-        margin: 2em;
+        margin: 3.5em;
 
         > .link {
-            font-size: @font-xs;
             margin-top: 1em;
+        }
+    }
+
+    &.-contact {
+        .title {
+            padding-bottom: 0;
+        }
+
+        .link {
+            display: none;
+        }
+
+        &:hover {
+            transition-duration: 1.5s;
+            transform: rotate(45deg);
+
+            .title {
+                display: none;
+            }
+
+            .link {
+                display: block;
+                transform: rotate(-45deg);
+                font-size: @font-xs;
+            }
         }
     }
 }

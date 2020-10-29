@@ -1,33 +1,3 @@
-@font-face {
-  font-family: 'Merriweather Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Merriweather-Regular'), url("Segoe UI.woff") format('OpenType');
-}
-@font-face {
-  font-family: 'Segoe UI Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Segoe UI Regular'), url("Segoe UI.woff") format('woff');
-}
-@font-face {
-  font-family: 'Segoe UI Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Segoe UI Italic'), url("Segoe UI Italic.woff") format('woff');
-}
-@font-face {
-  font-family: 'Segoe UI Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Segoe UI Bold'), url("Segoe UI Bold.woff") format('woff');
-}
-@font-face {
-  font-family: 'Segoe UI Bold Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Segoe UI Bold Italic'), url("Segoe UI Bold Italic.woff") format('woff');
-}
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -185,6 +155,7 @@ body {
   max-width: 1980px;
   width: 100%;
   margin: auto;
+  font-family: 'Merriweather', serif;
 }
 html {
   max-width: 1980px;
@@ -203,6 +174,17 @@ h6 {
   margin: 0;
   padding: 0;
   font-weight: 700;
+}
+h1,
+h2 {
+  font-size: 60px;
+  font-family: merriweather;
+}
+@media (max-width: 640px) {
+  h1,
+  h2 {
+    font-size: 9vw;
+  }
 }
 ul {
   list-style: none;
@@ -319,6 +301,12 @@ input:disabled {
 .link.-white:hover {
   color: hsl(0, 0%, 100%);
 }
+.title {
+  padding-bottom: 2em;
+}
+.title.-nopaddingbottom {
+  padding-bottom: 0;
+}
 .card-container.-value {
   max-width: 100%;
   width: 420px;
@@ -335,15 +323,34 @@ input:disabled {
   justify-content: center;
   background: hsl(29, 83%, 19%);
 }
+.card-container.-contact,
 .card-container.-team {
   max-width: 100%;
   width: 200px;
   height: 200px;
-  margin: 2em;
+  margin: 3.5em;
 }
+.card-container.-contact > .link,
 .card-container.-team > .link {
-  font-size: 0.75em;
   margin-top: 1em;
+}
+.card-container.-contact .title {
+  padding-bottom: 0;
+}
+.card-container.-contact .link {
+  display: none;
+}
+.card-container.-contact:hover {
+  transition-duration: 1.5s;
+  transform: rotate(45deg);
+}
+.card-container.-contact:hover .title {
+  display: none;
+}
+.card-container.-contact:hover .link {
+  display: block;
+  transform: rotate(-45deg);
+  font-size: 0.75em;
 }
 .hero-container {
   width: 100%;
@@ -355,91 +362,118 @@ input:disabled {
 .hero-container .content-container {
   width: 95%;
   height: 95%;
-  padding: 2em;
+  padding: 2em 5em;
   background: url("../img//background-header.png") no-repeat, center, top;
   background-size: cover;
   margin-top: 5em;
 }
-.hero-container .content-container > h1 {
-  margin-left: 5%;
+/* https://codepen.io/GeorgePark/pen/ZoaRrV */
+.shape-inner,
+.shape-outer {
+  width: 300px;
+  height: 300px;
+}
+.shape-inner .-rhombus,
+.shape-outer .-rhombus {
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.shape-outer {
+  display: flex;
+  flex-shrink: 0;
+}
+.shape-inner {
+  background-size: cover;
+  margin: auto;
+}
+.shape-inner .link,
+.shape-inner .title {
+  display: none;
+}
+.shape-inner:hover {
+  background: hsl(29, 40%, 54%) !important;
+}
+.shape-inner:hover .link,
+.shape-inner:hover .title {
+  display: flex;
 }
 .wrapper-layout {
   margin: auto;
 }
 .footer-container {
-  max-width: 1024px;
+  max-width: 1280px;
   padding: 2.5em;
-  margin-top: 5em;
 }
 .footer-container .col-container .title {
   font-size: 15px;
   margin-top: 1em;
   margin-bottom: 0.75em;
 }
-.footer-container.-about {
+.footer-container .col-container.-about {
   width: 100%;
-  max-width: 300px;
+  max-width: 640px;
   padding-right: 5%;
 }
 @media (max-width: 980px) {
-  .footer-container.-about {
+  .footer-container .col-container.-about {
     width: 100%;
     max-width: 100%;
   }
 }
-.footer-container.-about .logo {
+.footer-container .col-container.-about .logo {
   width: 150px;
 }
 @media (max-width: 280px) {
-  .footer-container.-about .logo {
+  .footer-container .col-container.-about .logo {
     display: none;
   }
 }
-.footer-container.-about .about {
+.footer-container .col-container.-about .about {
   margin-top: 2em;
   margin-bottom: 2em;
-  max-width: 450px;
   text-align: justify;
   font-size: 0.75em;
 }
-.footer-container.-plan {
-  width: 100px;
+.footer-container .col-container.-plan {
+  max-width: 160px;
 }
-.footer-container.-plan .footer-list {
+.footer-container .col-container.-plan .footer-list {
   padding-left: 0;
   line-height: 2;
 }
-.footer-container.-plan .footer-list .link {
+.footer-container .col-container.-plan .footer-list .link {
   font-size: 0.75em;
 }
-.footer-container.-newsletter {
-  width: 250px;
+.footer-container .col-container.-newsletter {
+  max-width: 320px;
 }
-@media (max-width: 320px) {
-  .footer-container.-newsletter {
-    display: none;
-  }
-}
-.footer-container.-newsletter .input {
+.footer-container .col-container.-newsletter .input {
   width: 150px;
   font-size: 0.75em;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-right: 0;
 }
-.footer-container.-newsletter .button {
+.footer-container .col-container.-newsletter .button {
   width: 50px;
   padding: 0;
   border-radius: 0;
 }
 .footer .copyright-container {
+  width: 100%;
   padding: 1em;
   font-size: 0.75em;
   text-align: center;
   text-decoration: none;
 }
-.footer .copyright-container address {
-  font-style: inherit;
+.footer .copyright-container .content-container {
+  max-width: 1280px;
+  margin: auto;
+}
+.footer .copyright-container .content-subcontainer {
+  margin-top: 1em;
+}
+.footer .copyright-container .content-subcontainer .icon-container {
+  margin: 0.5em;
 }
 .navbar {
   font-weight: 700;
@@ -529,31 +563,11 @@ input:disabled {
     font-weight: bold;
   }
 }
-.index {
-  font-family: 'Merriweather', serif;
-  /* this is a trick for create "responsive" font when we are on resolutions < 640px
-    @media (max-width: @s) {
-        font-size: 3vw;
-    }
-    */
-}
-.index h1,
-.index h2 {
-  font-size: 60px;
-  font-family: merriweather;
-  padding-bottom: 2.5em;
-}
-@media (max-width: 640px) {
-  .index h1,
-  .index h2 {
-    font-size: 9vw;
-  }
-}
 .index .section-container {
   padding-top: 5%;
 }
 .index .section-container.-project .illustration-container {
-  width: 58%;
+  width: 50%;
   transform: translate(0px, 20px);
 }
 @media (min-width: 960px) {
@@ -571,7 +585,7 @@ input:disabled {
   width: 100%;
 }
 .index .section-container.-project .text-container {
-  max-width: 40%;
+  max-width: 45%;
   margin-top: 2em;
   z-index: 101;
 }
@@ -632,11 +646,6 @@ input:disabled {
 .index .section-container.-coop .illustration-container {
   width: 100%;
 }
-.index .section-container.-coop .illustration-container .illustration {
-  width: 25%;
-  position: absolute;
-  right: 0;
-}
 @media (max-width: 960px) {
   .index .section-container.-coop .illustration-container {
     display: none;
@@ -646,6 +655,11 @@ input:disabled {
   .index .section-container.-coop .illustration-container {
     display: none;
   }
+}
+.index .section-container.-coop .illustration {
+  width: 25%;
+  position: absolute;
+  right: 0;
 }
 .index .section-container.-coop .bulletpoint-list {
   padding-bottom: 5em;
@@ -666,7 +680,11 @@ input:disabled {
   margin-left: 1em;
 }
 .index .section-container.-team .teammembers-container {
-  max-width: 960px;
+  max-width: 1024px;
+}
+.index .section-container.-contact {
+  padding-top: 0;
+  padding-bottom: 10%;
 }
 ._hide.-always {
   display: none;
@@ -806,6 +824,12 @@ input:disabled {
 }
 ._color.-bgdarkgreen {
   background-color: hsl(172, 25%, 12%);
+}
+._color.-bgdarkergreen {
+  background-color: hsl(172, 25%, 7%);
+}
+._color.-bgdarkestgreen {
+  background-color: hsl(0, 0%, 0%);
 }
 ._color.-bgyellow {
   background-color: hsl(29, 40%, 54%);
