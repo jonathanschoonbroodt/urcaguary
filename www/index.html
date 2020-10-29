@@ -74,14 +74,10 @@
         <div class="wrapper-layout">
             <div class="index">
                 <header class="hero-container _flex -center -h -v" id="hero">
-                    <div class="content-container _flex -column -center -h -start">
-                        <h1 class="title -nopaddingbottom _color -white">Urcaguary, pour une joaillerie éthique</h1>
-                        <!--
-                            <p class="_color -white">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            </p>
-                            <a href="#" class="button -yellow _width -maxwidth200px" title="Commencez">Plus d'infos</a>
-                        -->
+                    <div class="content-container _flex -column -center -h">
+                        <div class="illustration _flex -column -center -h">
+                            <h1 class="title -nopaddingbottom _color -white">Urcaguary, pour une joaillerie éthique</h1>
+                        </div>
                     </div>
                 </header>
 
@@ -89,8 +85,7 @@
                     <section class="section-container -project _color -bgdarkgreen" id="project">
                         <div class="_flex -wrap">
                             <div class="illustration-container">
-                                <!-- <div class="illustration"></div> -->
-                                <img src="../img/illustration-projet.png" class="illustration" alt="Illustration de la section projet d'Urcaguary">
+                                <img src="../img/illustration/projet.png" class="illustration" alt="Illustration de la section projet d'Urcaguary">
                             </div>
                             <div class="text-container _flex -column">
                                 <h2 class="title _color -white">Notre projet</h2>
@@ -109,7 +104,7 @@
                         <h2 class="title _color -white _text -center">Nos valeurs</h2>
                         <div class="values-container _flex -wrap -center -h -v">
                             <div class="card-container -value _flex -column -center -h -v _text -center">
-                                <img class="icon -l" src="../img/icons/icons-value.svg" alt="Icône valeurs {{Nom de la valeur}}">
+                                <img class="icon -l" src="../img/icons/value-equity.svg" alt="Icône valeurs {{Nom de la valeur}}">
                                 <h3 class="title _color -white">Lorem ipsum</h3>
                                 <p class="_text -bold _color -brown">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -117,7 +112,7 @@
                                 </p>
                             </div>
                             <div class="card-container -value _flex -column -center -h -v _text -center">
-                                <img class="icon -l" src="../img/icons/icons-value.svg" alt="Icône valeurs {{Nom de la valeur}}">
+                                <img class="icon -l" src="../img/icons/value-equity.svg" alt="Icône valeurs {{Nom de la valeur}}">
                                 <h3 class="title _color -white">Lorem ipsum</h3>
                                 <p class="_text -bold _color -brown">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -125,7 +120,7 @@
                                 </p>
                             </div>
                             <div class="card-container -value _flex -column -center -h -v _text -center">
-                                <img class="icon -l" src="../img/icons/icons-value.svg" alt="Icône valeurs {{Nom de la valeur}}">
+                                <img class="icon -l" src="../img/icons/value-equity.svg" alt="Icône valeurs {{Nom de la valeur}}">
                                 <h3 class="title _color -white">Lorem ipsum</h3>
                                 <p class="_text -bold _color -brown">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -148,10 +143,13 @@
                                     <a class="button -yellow" href="#">Pdf de présentation</a>
                                     <a class="button -yellow" href="#">Je deviens coopérateur</a>
                                 </div>
-                                <a class="link -underline _color -white" href="#">Télécharger le business-plan</a>
+                                <div class="links-container _flex -column">
+                                    <a class="link -underline _color -white" href="#">Télécharger le business-plan</a>
+                                    <a class="link -underline _color -white" href="#">Télécharger les statuts</a>
+                                </div>
                             </div>
-                            <div class="illustration-container">
-                                <img src="../img/illustration-coop.png" class="illustration" alt="Illustration de la section coopérateur d'Urcaguary">
+                            <div class="/illustration/container">
+                                <img src="../img//illustration/coop.png" class="illustration" alt="Illustration de la section coopérateur d'Urcaguary">
                             </div>
                         </div>
                     </section>
@@ -218,9 +216,10 @@
                         <div class="col-container -about _color -white">
                             <h3 class="_hide -always">A propos de Urcaguary</h3>
                             <img class="logo" src="../img/logo.svg" alt="Logo de Urcaguary">
-                            <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                ut
-                                aliquip ex ea commodo consequat.</p>
+                            <p class="about">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            </p>
                         </div>
                         <div class="col-container -plan  _color -white">
                             <h3 class="title">Plan du Site</h3>
@@ -249,16 +248,7 @@
                         </div>
                         <div class="col-container -newsletter  _color -white">
                             <h3 class="title">Suivre notre projet</h3>
-                            <!--
-                                <div class="_flex -column">
-                                    <div class="_flex -row -wrap">
-                                        <input class="input -blueborder -postright" type="mail" placeholder="johndoe@gmail.com" id="example" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                                        <button class="button -blue" type="submit"><img class="icon" src="../img/icons/fields/send.svg"></button>
-                                        <div class="errormessage">Le champs doit contenir une adresse mail valide. Vérifiez que l'adresse contienne un "@" et un ".extension".</div>
-                                    </div>
-                                    <div class="tooltip">Insérez votre adresse mail</div>
-                                </div>
-                            -->
+                            <a class="button -yellow" href="#">Je m'inscris à la newsletter !</a>
                         </div>
                     </div>
                     <div class="copyright-container _color -bgdarkestgreen -white">

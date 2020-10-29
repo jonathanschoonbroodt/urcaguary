@@ -334,6 +334,9 @@ input:disabled {
 .card-container.-team > .link {
   margin-top: 1em;
 }
+.card-container.-contact {
+  margin: 3.5em 3.5em 0;
+}
 .card-container.-contact .title {
   padding-bottom: 0;
 }
@@ -356,16 +359,35 @@ input:disabled {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url("../img/background-header-blured.png") no-repeat, center, top;
+  background: url("../img/background/header-blured.png") no-repeat, center, top;
   background-size: 100% 100%;
 }
 .hero-container .content-container {
   width: 95%;
-  height: 95%;
-  padding: 2em 5em;
-  background: url("../img//background-header.png") no-repeat, center, top;
+  height: 100vh;
+  overflow: hidden;
+  cursor: pointer;
+}
+.hero-container .content-container .illustration {
+  height: 100vh;
+  background: url("../img/background/header.png") no-repeat, center;
   background-size: cover;
   margin-top: 5em;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 10s;
+}
+.hero-container .content-container .illustration > h1 {
+  padding: 5em 2em;
+}
+.hero-container .content-container:focus .illustration,
+.hero-container .content-container:hover .illustration {
+  -ms-transform: scale(1.025);
+  -moz-transform: scale(1.025);
+  -webkit-transform: scale(1.025);
+  -o-transform: scale(1.025);
+  transform: scale(1.025);
 }
 /* https://codepen.io/GeorgePark/pen/ZoaRrV */
 .shape-inner,
@@ -445,18 +467,6 @@ input:disabled {
 }
 .footer-container .col-container.-newsletter {
   max-width: 320px;
-}
-.footer-container .col-container.-newsletter .input {
-  width: 150px;
-  font-size: 0.75em;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-right: 0;
-}
-.footer-container .col-container.-newsletter .button {
-  width: 50px;
-  padding: 0;
-  border-radius: 0;
 }
 .footer .copyright-container {
   width: 100%;
@@ -629,7 +639,7 @@ input:disabled {
   }
 }
 .index .section-container.-values {
-  background: url("../img/background-values.png") no-repeat, right, top;
+  background: url("../img/background/values.png") no-repeat, right, top;
   background-size: cover;
   padding: 10%;
 }
@@ -684,7 +694,7 @@ input:disabled {
 }
 .index .section-container.-contact {
   padding-top: 0;
-  padding-bottom: 10%;
+  padding-bottom: 0;
 }
 ._hide.-always {
   display: none;
