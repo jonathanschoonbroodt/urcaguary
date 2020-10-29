@@ -383,7 +383,6 @@ input:disabled {
   width: 95%;
   height: 100vh;
   overflow: hidden;
-  cursor: pointer;
 }
 .hero-container .content-container .illustration {
   height: 100vh;
