@@ -659,6 +659,9 @@ input:disabled {
   background-size: cover;
   padding: 10%;
 }
+.index .section-container.-values .icon {
+  margin-bottom: 1em;
+}
 .index .section-container.-coop {
   padding: 10em 10%;
 }
