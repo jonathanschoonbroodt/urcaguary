@@ -330,6 +330,14 @@ input:disabled {
   height: 200px;
   margin: 3.5em;
 }
+.card-container.-contact h4,
+.card-container.-team h4 {
+  text-transform: uppercase;
+}
+.card-container.-contact .title,
+.card-container.-team .title {
+  padding-bottom: 0;
+}
 .card-container.-contact > .link,
 .card-container.-team > .link {
   margin-top: 1em;
@@ -423,6 +431,7 @@ input:disabled {
   background-size: cover;
   margin: auto;
 }
+.shape-inner .function,
 .shape-inner .link,
 .shape-inner .title {
   display: none;
@@ -430,6 +439,7 @@ input:disabled {
 .shape-inner:hover {
   background: hsl(29, 40%, 54%) !important;
 }
+.shape-inner:hover .function,
 .shape-inner:hover .link,
 .shape-inner:hover .title {
   display: flex;
@@ -592,6 +602,10 @@ input:disabled {
 .index .section-container {
   padding-top: 5%;
 }
+.index .section-container.-project .button {
+  margin: 2em;
+  max-width: 200px;
+}
 .index .section-container.-project .illustration-container {
   width: 50%;
   transform: translate(0px, 20px);
@@ -694,6 +708,9 @@ input:disabled {
   padding-bottom: 5em;
   margin-left: 2em;
   line-height: 2em;
+}
+.index .section-container.-coop .bulletpoint-list > ul {
+  margin-bottom: 2em;
 }
 .index .section-container.-coop .bulletpoint-list .bulletpoint-listelement:before {
   content: '\25C8';

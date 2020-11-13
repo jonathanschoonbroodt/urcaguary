@@ -3,6 +3,11 @@
         padding-top: 5%;
         // "Notre projet"
         &.-project {
+            .button {
+                margin: 2em;
+                max-width: 200px;
+            }
+
             .illustration-container {
                 width: 50%;
                 transform: translate(0px, 20px);
@@ -80,6 +85,7 @@
             background: url("../img/background/values.png") no-repeat, right, top;
             background-size: cover;
             padding: 10%;
+
             .icon {
                 margin-bottom: 1em;
             }
@@ -117,6 +123,10 @@
                 padding-bottom: 5em;
                 margin-left: 2em;
                 line-height: 2em;
+
+                > ul {
+                    margin-bottom: 2em;
+                }
 
                 .bulletpoint-listelement {
                     &:before {

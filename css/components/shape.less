@@ -1,5 +1,4 @@
 /* https://codepen.io/GeorgePark/pen/ZoaRrV */
-
 .shape {
     &-inner,
     &-outer {
@@ -21,6 +20,7 @@
         background-size: cover;
         margin: auto;
 
+        .function,
         .link,
         .title {
             display: none;
@@ -29,6 +29,7 @@
         &:hover {
             background: @yellow!important; // overide background-url in html
 
+            .function,
             .link,
             .title {
                 display: flex;
