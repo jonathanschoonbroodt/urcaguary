@@ -1,7 +1,7 @@
 // buttons
 
 .button {
-        height: 2em;
+    height: 2em;
     display: block;
     padding: .5em 2em;
     margin: .5em;
@@ -17,16 +17,18 @@
     &.-yellow {
         background-color: @yellow;
         color: @white;
+
         &:hover {
             background-color: @darkyellow;
-            color: @white
+            color: @white;
         }
     }
 
-    &.-overflow{
+    &.-overflow {
         &.-hidden {
             overflow: hidden;
         }
+
         &.-ellipsis {
             text-overflow: ellipsis;
         }
