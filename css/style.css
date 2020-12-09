@@ -408,6 +408,7 @@ input:disabled {
 }
 .shape-inner .-rhombus,
 .shape-outer .-rhombus {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 .shape-outer {
