@@ -368,6 +368,7 @@ input:disabled {
   bottom: 0;
   right: 0;
   opacity: 0.5;
+  padding: 1.5em;
 }
 .tothetop:hover {
   opacity: 1;
@@ -417,19 +418,6 @@ input:disabled {
 .shape-inner {
   background-size: cover;
   margin: auto;
-}
-.shape-inner .function,
-.shape-inner .link,
-.shape-inner .title {
-  display: none;
-}
-.shape-inner:hover {
-  background: hsl(29, 40%, 54%) !important;
-}
-.shape-inner:hover .function,
-.shape-inner:hover .link,
-.shape-inner:hover .title {
-  display: flex;
 }
 .wrapper-layout {
   margin: auto;
