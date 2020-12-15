@@ -3,8 +3,8 @@
 .card-container {
     &.-value {
         max-width: 100%;
-        width: 420px;
-        margin: 2em;
+        width: 320px;
+        margin: 1em;
 
         > h3 {
             &:after {
@@ -19,6 +19,10 @@
                 justify-content: center;
                 background: @brown;
             }
+        }
+
+        p {
+            height: 200px;
         }
     }
 
@@ -37,8 +41,8 @@
             padding-bottom: 0;
         }
 
-        > .link {
-            margin-top: 1em;
+        .link {
+            font-size: @font-m;
         }
     }
 
@@ -64,7 +68,11 @@
             .link {
                 display: block;
                 transform: rotate(-45deg);
-                font-size: @font-xs;
+                margin-top: 1em;
+            }
+
+            .phonenumber {
+                padding-left: 3em;
             }
         }
     }

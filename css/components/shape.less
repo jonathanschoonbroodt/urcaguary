@@ -10,15 +10,31 @@
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
             -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
         }
-    }
 
-    &-outer {
-        display: flex;
-        flex-shrink: 0;
+        &-outer {
+            display: flex;
+            flex-shrink: 0;
+        }
     }
 
     &-inner {
         background-size: cover;
         margin: auto;
+
+        .function,
+        .link,
+        .title {
+            display: none;
+        }
+
+        &:hover {
+            background: @yellow!important; // overide background-url in html
+
+            .function,
+            .link,
+            .title {
+                display: flex;
+            }
+        }
     }
 }
