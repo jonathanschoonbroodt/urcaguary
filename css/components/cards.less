@@ -42,7 +42,7 @@
         }
 
         .link {
-            font-size: @font-m;
+            font-size: @font-s;
         }
     }
 
@@ -53,7 +53,7 @@
             padding-bottom: 0;
         }
 
-        .link {
+        .links-container {
             display: none;
         }
 
@@ -65,15 +65,15 @@
                 display: none;
             }
 
-            .link {
-                display: block;
+            .links-container {
+                display: flex;
+                flex-flow: column;
                 transform: rotate(-45deg);
-                margin-top: 1em;
             }
-
-            .phonenumber {
-                padding-left: 3em;
-            }
+            // .phonenumber {
+            //     margin-top: 1em;
+            //     padding-left: 3em;
+            // }
         }
     }
 }

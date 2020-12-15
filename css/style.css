@@ -180,7 +180,7 @@ p {
 }
 h1,
 h2 {
-  font-size: 5em;
+  font-size: 4em;
   font-family: merriweather;
 }
 @media (max-width: 640px) {
@@ -243,19 +243,6 @@ input:disabled {
   background-color: hsl(29, 40%, 29%);
   color: hsl(0, 0%, 100%);
 }
-.button.-overflow.-hidden {
-  overflow: hidden;
-}
-.button.-overflow.-ellipsis {
-  text-overflow: ellipsis;
-}
-.button.-disabled {
-  cursor: not-allowed;
-}
-.button.-empty {
-  border: 1px solid;
-  border-color: inherit;
-}
 .icon {
   width: 1.5em;
   height: 1.5em;
@@ -304,6 +291,9 @@ input:disabled {
 .title.-nopaddingbottom {
   padding-bottom: 0;
 }
+.title.-sub {
+  padding-bottom: 1em;
+}
 .card-container.-value {
   max-width: 100%;
   width: 320px;
@@ -340,7 +330,7 @@ input:disabled {
 }
 .card-container.-contact .link,
 .card-container.-team .link {
-  font-size: 15px;
+  font-size: 1em;
 }
 .card-container.-contact {
   margin: 3.5em 3.5em 0;
@@ -348,7 +338,7 @@ input:disabled {
 .card-container.-contact .title {
   padding-bottom: 0;
 }
-.card-container.-contact .link {
+.card-container.-contact .links-container {
   display: none;
 }
 .card-container.-contact:hover {
@@ -358,13 +348,10 @@ input:disabled {
 .card-container.-contact:hover .title {
   display: none;
 }
-.card-container.-contact:hover .link {
-  display: block;
+.card-container.-contact:hover .links-container {
+  display: flex;
+  flex-flow: column;
   transform: rotate(-45deg);
-  margin-top: 1em;
-}
-.card-container.-contact:hover .phonenumber {
-  padding-left: 3em;
 }
 .tothetop {
   width: 25px;
@@ -417,8 +404,7 @@ input:disabled {
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
-.shape-inner-outer,
-.shape-outer-outer {
+.shape-outer {
   display: flex;
   flex-shrink: 0;
 }
@@ -446,15 +432,17 @@ input:disabled {
   max-width: 1280px;
   padding: 2.5em;
 }
+.footer-container .col-container {
+  padding: 0.5em;
+}
 .footer-container .col-container .title {
-  font-size: 15px;
+  font-size: 1.5em;
   margin-top: 1em;
   margin-bottom: 0.75em;
 }
 .footer-container .col-container.-about {
   width: 100%;
   max-width: 640px;
-  padding-right: 5%;
 }
 @media (max-width: 980px) {
   .footer-container .col-container.-about {
@@ -521,7 +509,7 @@ input:disabled {
   background: linear-gradient(to bottom, hsl(0, 0%, 0%), transparent);
 }
 .navbar-brand .logo {
-  width: 150px;
+  width: 75px;
   display: flex;
 }
 .navbar-brand .logo.-white {
