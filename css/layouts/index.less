@@ -4,10 +4,6 @@
         padding-bottom: 2.5em;
         // "Notre projet"
         &.-project {
-            .button {
-                margin: 2em;
-                max-width: 200px;
-            }
 
             .illustration-container {
                 width: 50%;
@@ -45,8 +41,7 @@
                     max-width: @s;
                     margin-top: 2em;
                     margin-left: 2em;
-                    // overide by default property from browser
-                    margin-block-end: 0;
+                    margin-block-end: 0; // overide by default property from browser
                 }
 
                 > hr {
@@ -73,6 +68,10 @@
             background: url("../img/background/values.png") no-repeat, right, top;
             background-size: cover;
             padding: 10% 0;
+
+            .values-container {
+                max-width: @l;
+            }
 
             .icon {
                 margin-bottom: 1em;
@@ -128,6 +127,7 @@
 
             .buttons-container {
                 max-width: @s;
+                width: 100%;
             }
 
             .link {
