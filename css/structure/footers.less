@@ -52,6 +52,20 @@
             &.-newsletter {
                 width: 100%;
                 max-width: @xs;
+
+                .button {
+                    width: fit-content;
+                    float: right;
+                    @media (max-width: 556px - 1px) {
+                        float: left;
+                    }
+                }
+                .title {
+                    text-align: right;
+                    @media (max-width: 556px - 1px) {
+                        text-align: left;
+                    }
+                }
             }
         }
     }

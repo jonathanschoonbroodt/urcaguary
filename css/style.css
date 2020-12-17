@@ -480,6 +480,23 @@ input:disabled {
   width: 100%;
   max-width: 320px;
 }
+.footer-container .col-container.-newsletter .button {
+  width: fit-content;
+  float: right;
+}
+@media (max-width: 555px) {
+  .footer-container .col-container.-newsletter .button {
+    float: left;
+  }
+}
+.footer-container .col-container.-newsletter .title {
+  text-align: right;
+}
+@media (max-width: 555px) {
+  .footer-container .col-container.-newsletter .title {
+    text-align: left;
+  }
+}
 .footer .copyright-container {
   width: 100%;
   font-size: 0.75em;
