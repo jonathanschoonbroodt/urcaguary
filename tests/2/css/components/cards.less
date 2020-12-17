@@ -1,0 +1,75 @@
+// card
+
+.card-container {
+    &.-value {
+        max-width: 100%;
+        width: 300px;
+        margin: 1em;
+
+        > h3 {
+            &:after {
+                margin-top: 2em;
+                margin-right: auto;
+                margin-left: auto;
+                // separation line
+                width: 2em;
+                height: 1px;
+                content: "";
+                display: flex;
+                justify-content: center;
+                background: @brown;
+            }
+        }
+
+        p {
+            height: 100px;
+        }
+    }
+
+    &.-contact,
+    &.-team {
+        max-width: 100%;
+        width: 200px;
+        height: 200px;
+        margin: 3.5em;
+
+        h4 {
+            text-transform: uppercase;
+        }
+
+        .title {
+            padding-bottom: 0;
+        }
+
+        .link {
+            font-size: @font-s;
+        }
+    }
+
+    &.-contact {
+        margin: 3.5em 3.5em 0;
+
+        .title {
+            padding-bottom: 0;
+        }
+
+        .links-container {
+            display: none;
+        }
+
+        &:hover {
+            transition-duration: 1.5s;
+            transform: rotate(45deg);
+
+            .title {
+                display: none;
+            }
+
+            .links-container {
+                display: flex;
+                flex-flow: column;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
