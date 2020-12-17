@@ -56,24 +56,26 @@
         }
     }
 
-    .copyright-container {
-        width: 100%;
-        padding: 1em;
-        font-size: @font-xs;
-        text-align: center;
-        text-decoration: none;
-
-        .content {
-            &-container {
-                max-width: @xl;
-                margin: auto;
-            }
+    .copyright {
+        &-container {
+            width: 100%;
+            padding: 1em;
+            font-size: @font-xs;
+            text-align: center;
+            text-decoration: none;
 
             &-subcontainer {
-                margin-top: 1em;
+                max-width: @xl;
+                margin: auto;
 
-                .icon-container {
-                    margin: .5em;
+                .content {
+                    &-container {
+                        margin-top: 1em;
+
+                        .icon-container {
+                            margin: .5em;
+                        }
+                    }
                 }
             }
         }
