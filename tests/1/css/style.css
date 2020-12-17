@@ -440,70 +440,72 @@ input:disabled {
 .wrapper-layout {
   margin: auto;
 }
-.footer-container .copyright-container {
-  width: 100%;
-  padding: 2.5em;
-  font-size: 0.75em;
-  text-align: center;
-  text-decoration: none;
-}
-.footer-container .copyright-container .content-container {
-  max-width: 1280px;
-  margin: auto;
-}
-.footer-container .copyright-container .content-subcontainer {
-  margin-top: 1em;
-}
-.footer-container .copyright-container .content-subcontainer .icon-container {
-  margin: 0.5em;
-}
-.footer-subcontainer {
+.footer-container {
   max-width: 1280px;
   padding: 2.5em;
 }
-.footer-subcontainer .col-container {
+.footer-container .col-container {
   padding: 0.5em;
 }
-.footer-subcontainer .col-container .title {
+.footer-container .col-container .title {
   font-size: 1.5em;
 }
-.footer-subcontainer .col-container.-about {
+.footer-container .col-container.-about {
   width: 100%;
   max-width: 640px;
 }
 @media (max-width: 980px) {
-  .footer-subcontainer .col-container.-about {
+  .footer-container .col-container.-about {
     width: 100%;
     max-width: 100%;
   }
 }
-.footer-subcontainer .col-container.-about .logo {
+.footer-container .col-container.-about .logo {
   width: 150px;
 }
 @media (max-width: 280px) {
-  .footer-subcontainer .col-container.-about .logo {
+  .footer-container .col-container.-about .logo {
     display: none;
   }
 }
-.footer-subcontainer .col-container.-about .about {
+.footer-container .col-container.-about .about {
   margin-top: 2em;
   margin-bottom: 2em;
   text-align: justify;
   font-size: 0.75em;
 }
-.footer-subcontainer .col-container.-plan {
+.footer-container .col-container.-plan {
   max-width: 160px;
 }
-.footer-subcontainer .col-container.-plan .footer-list {
+.footer-container .col-container.-plan .footer-list {
   padding-left: 0;
   line-height: 2;
 }
-.footer-subcontainer .col-container.-plan .footer-list .link {
+.footer-container .col-container.-plan .footer-list .link {
   font-size: 0.75em;
 }
-.footer-subcontainer .col-container.-newsletter {
+.footer-container .col-container.-newsletter {
   width: 100%;
   max-width: 320px;
+}
+.footer .copyright-container {
+  width: 100%;
+  font-size: 0.75em;
+  text-align: center;
+  text-decoration: none;
+}
+.footer .copyright-container .madewithlove {
+  margin-block-end: 0;
+}
+.footer .copyright-subcontainer {
+  max-width: 1280px;
+  padding: 2.5em;
+}
+.footer .copyright-subcontainer .content-container {
+  margin-top: 1em;
+}
+.footer .copyright-subcontainer .content-container .icon-container {
+  margin: 0.5em;
 }
 .navbar {
   font-weight: 700;
