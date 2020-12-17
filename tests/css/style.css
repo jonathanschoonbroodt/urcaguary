@@ -258,6 +258,14 @@ input:disabled {
   background-color: hsl(29, 40%, 29%);
   color: hsl(0, 0%, 100%);
 }
+.button.-darkgreen {
+  background-color: hsl(172, 25%, 12%);
+  color: hsl(0, 0%, 100%);
+}
+.button.-darkgreen:hover {
+  background-color: hsl(172, 25%, 7%);
+  color: hsl(0, 0%, 100%);
+}
 .icon {
   width: 1.5em;
   height: 1.5em;
@@ -301,13 +309,13 @@ input:disabled {
   color: hsl(0, 0%, 100%);
 }
 .title {
-  padding-bottom: 2em;
+  padding-bottom: 5%;
 }
 .title.-nopaddingbottom {
   padding-bottom: 0;
 }
 .title.-sub {
-  padding-bottom: 1em;
+  padding-bottom: 2.5%;
 }
 .card-container.-value {
   max-width: 100%;
@@ -323,7 +331,7 @@ input:disabled {
   content: "";
   display: flex;
   justify-content: center;
-  background: hsl(29, 83%, 19%);
+  background: hsl(0, 0%, 100%);
 }
 .card-container.-value p {
   height: 100px;
@@ -445,70 +453,70 @@ input:disabled {
 .wrapper-layout {
   margin: auto;
 }
-.footer-container {
+.footer-container .copyright-container {
+  width: 100%;
+  padding: 2.5em;
+  font-size: 0.75em;
+  text-align: center;
+  text-decoration: none;
+}
+.footer-container .copyright-container .content-container {
+  max-width: 1280px;
+  margin: auto;
+}
+.footer-container .copyright-container .content-subcontainer {
+  margin-top: 1em;
+}
+.footer-container .copyright-container .content-subcontainer .icon-container {
+  margin: 0.5em;
+}
+.footer-subcontainer {
   max-width: 1280px;
   padding: 2.5em;
 }
-.footer-container .col-container {
+.footer-subcontainer .col-container {
   padding: 0.5em;
 }
-.footer-container .col-container .title {
+.footer-subcontainer .col-container .title {
   font-size: 1.5em;
 }
-.footer-container .col-container.-about {
+.footer-subcontainer .col-container.-about {
   width: 100%;
   max-width: 640px;
 }
 @media (max-width: 980px) {
-  .footer-container .col-container.-about {
+  .footer-subcontainer .col-container.-about {
     width: 100%;
     max-width: 100%;
   }
 }
-.footer-container .col-container.-about .logo {
+.footer-subcontainer .col-container.-about .logo {
   width: 150px;
 }
 @media (max-width: 280px) {
-  .footer-container .col-container.-about .logo {
+  .footer-subcontainer .col-container.-about .logo {
     display: none;
   }
 }
-.footer-container .col-container.-about .about {
+.footer-subcontainer .col-container.-about .about {
   margin-top: 2em;
   margin-bottom: 2em;
   text-align: justify;
   font-size: 0.75em;
 }
-.footer-container .col-container.-plan {
+.footer-subcontainer .col-container.-plan {
   max-width: 160px;
 }
-.footer-container .col-container.-plan .footer-list {
+.footer-subcontainer .col-container.-plan .footer-list {
   padding-left: 0;
   line-height: 2;
 }
-.footer-container .col-container.-plan .footer-list .link {
+.footer-subcontainer .col-container.-plan .footer-list .link {
   font-size: 0.75em;
 }
-.footer-container .col-container.-newsletter {
+.footer-subcontainer .col-container.-newsletter {
   width: 100%;
   max-width: 320px;
-}
-.footer .copyright-container {
-  width: 100%;
-  padding: 1em;
-  font-size: 0.75em;
-  text-align: center;
-  text-decoration: none;
-}
-.footer .copyright-container .content-container {
-  max-width: 1280px;
-  margin: auto;
-}
-.footer .copyright-container .content-subcontainer {
-  margin-top: 1em;
-}
-.footer .copyright-container .content-subcontainer .icon-container {
-  margin: 0.5em;
 }
 .navbar {
   font-weight: 700;
@@ -599,8 +607,8 @@ input:disabled {
   }
 }
 .section-container {
-  padding-top: 2.5em;
-  padding-bottom: 2.5em;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 .section-container.-project .illustration-container {
   width: 50%;
@@ -660,11 +668,6 @@ input:disabled {
     padding: 1em;
   }
 }
-.section-container.-values {
-  background: url("../img/background/values.png") no-repeat, right, top;
-  background-size: cover;
-  padding: 10% 0;
-}
 .section-container.-values .values-container {
   max-width: 1024px;
 }
@@ -672,7 +675,8 @@ input:disabled {
   margin-bottom: 1em;
 }
 .section-container.-coop {
-  padding: 10em 10%;
+  padding-left: 5em;
+  padding-right: 5em;
 }
 .section-container.-coop .text-container {
   max-width: 600px;
@@ -709,7 +713,7 @@ input:disabled {
 .section-container.-coop .bulletpoint-list .bulletpoint-listelement:before {
   content: '\25C8';
   font-size: 1em;
-  color: hsl(29, 40%, 54%);
+  color: hsl(172, 25%, 12%);
   margin-right: 2em;
 }
 .section-container.-coop .buttons-container {
@@ -719,9 +723,6 @@ input:disabled {
 .section-container.-coop .link {
   font-size: 0.75em;
   margin-left: 1em;
-}
-.section-container.-team {
-  padding-top: 0;
 }
 .section-container.-team .teammembers-container {
   max-width: 1024px;
