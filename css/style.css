@@ -722,11 +722,10 @@ input:disabled {
   right: 0;
 }
 .section-container.-coop .bulletpoint-list {
+  margin-top: 1em;
+  margin-bottom: 2em;
   margin-left: 2em;
   line-height: 2em;
-}
-.section-container.-coop .bulletpoint-list > ul {
-  margin-bottom: 2em;
 }
 .section-container.-coop .bulletpoint-list .bulletpoint-listelement:before {
   content: '\25C8';

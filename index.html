@@ -8,7 +8,7 @@
         <meta name="keywords" content="minerai, diamant, or, pierres précieuses, Belgique, éthique, équitable">
         <meta name="author" content="Urcaguary Coopérative">
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-xscale=1.0, minimum-xscale=1.0, maximum-xscale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="img/favicon.png">
         <script src="js/functions.js"></script>
@@ -19,7 +19,7 @@
             <a class="_color -green" href="#" title="Retourner en haut de la page">&uarr;</a>
         </nav>
         <nav class="navbar" id="menu">
-            <div class="navbar-container _flex -spacebetween  _margin -auto">
+            <div class="navbar-container _flex -spacebetween _margin -auto">
                 <h2 class="_hide -always">Menu de navigation</h2>
                 <div class="navbar-brand _flex -start">
                     <span class="_hide -always">Urcaguary</span>
@@ -79,13 +79,13 @@
                     </div>
                 </header>
                 <main>
-                    <section class="section-container -project _color -bgdarkgreen" id="project">
+                    <section class="section-container -project _color -bgdarkgreen">
                         <div class="_flex -wrap">
                             <div class="illustration-container">
                                 <img src="img/illustration/projet.png" class="illustration" alt="Illustration de la section projet d'Urcaguary">
                             </div>
                             <div class="text-container _flex -column">
-                                <h2 class="title _color -white">Notre projet</h2>
+                                <h2 class="title _color -white" id="project">Notre projet</h2>
                                 <p class="_color -white">L’extraction minière de l’or est responsable de désastres écologiques et sociaux. De nombreux
                                     mineurs artisanaux vivent dans des conditions précaires où le travail des enfants, l’extrême pauvreté
                                     et la dangerosité des conditions de travail règnent.</p>
@@ -99,8 +99,8 @@
                             </div>
                         </div>
                     </section>
-                    <section class="section-container -values _color -bgwhite" id="values">
-                        <h2 class="title _color -white _text -center">Nos valeurs</h2>
+                    <section class="section-container -values _color -bgwhite">
+                        <h2 class="title _color -white _text -center" id="values">Nos valeurs</h2>
                         <div class="values-container _flex -wrap -center -h -v _margin -auto">
                             <div class="card-container -value _flex -column -center -h -v _text -center">
                                 <img class="icon -xl" src="img/icons/equitable.svg" alt="Icône valeur Ethique">
@@ -127,32 +127,24 @@
                             </div>
                         </div>
                     </section>
-                    <section class="section-container -coop _color -bgdarkgreen" id="coop">
+                    <section class="section-container -coop _color -bgdarkgreen">
                         <div class="content-container _flex">
                             <div class="text-container _flex -column -wrap">
-                                <h2 class="title _color -white">Devenir coopérateur</h2>
+                                <h2 class="title _color -white" id="coop">Devenir coopérateur</h2>
+                                <span class="_color -white _text -bold">Investir dans la coopérative vous octroie plusieurs droits :</span>
                                 <ul class="bulletpoint-list _flex -column">
-                                    <strong class="_color -white">Investir dans la coopérative vous octroie plusieurs droits :</strong>
-                                    <ul>
-                                        <li class="bulletpoint-listelement _color -white">Être acteur de changement pour construire un monde meilleur ;</li>
-                                        <li class="bulletpoint-listelement _color -white">Participer au processus de prise de décisions ;</li>
-                                        <li class="bulletpoint-listelement _color -white">Bénéficier d’un avantage fiscal et d’éventuels dividendes.</li>
-                                    </ul>
-                                    <strong class="_color -white">De plus, si vous êtes artisan bijoutier, vous pouvez :</strong>
-                                    <ul>
-                                        <li class="bulletpoint-listelement _color -white">Être prioritaire pour vous fournir en minerais éthiques d’Urcaguary ;</li>
-                                        <li class="bulletpoint-listelement _color -white">Bénéficier de supports en communication ;</li>
-                                        <li class="bulletpoint-listelement _color -white">Rejoindre une communauté d’artisans engagés.</li>
-                                    </ul>
+                                    <li class="bulletpoint-listelement _color -white">Être acteur de changement pour construire un monde meilleur ;</li>
+                                    <li class="bulletpoint-listelement _color -white">Participer au processus de prise de décisions ;</li>
+                                    <li class="bulletpoint-listelement _color -white">Bénéficier d’un avantage fiscal et d’éventuels dividendes.</li>
+                                </ul>
+                                <span class="_color -white _text -bold">De plus, si vous êtes artisan bijoutier, vous pouvez :</span>
+                                <ul class="bulletpoint-list _flex -column">
+                                    <li class="bulletpoint-listelement _color -white">Être prioritaire pour vous fournir en minerais éthiques d’Urcaguary ;</li>
+                                    <li class="bulletpoint-listelement _color -white">Bénéficier de supports en communication ;</li>
+                                    <li class="bulletpoint-listelement _color -white">Rejoindre une communauté d’artisans engagés.</li>
                                 </ul>
                                 <div class="buttons-container _flex -wrap -spacebetween">
                                     <a class="button -yellow" href="https://mailchi.mp/be816a47d032/devenir-cooprateur" title="Accéder au formulaire d'inscription à la coopérative">Je deviens coopérateur</a>
-                                </div>
-                                <div class="links-container _flex -column">
-                                    <!--
-                                    <a class="link -underline _color -white" href="#">Télécharger le business-plan</a>
-                                    <a class="link -underline _color -white" href="#">Télécharger les statuts</a>
-                                    -->
                                 </div>
                             </div>
                             <div class="illustration-container">
@@ -160,8 +152,8 @@
                             </div>
                         </div>
                     </section>
-                    <section class="section-container -team _flex -column -center -h -v _color -bgdarkgreen" id="team">
-                        <h2 class="title _color -white">L'équipe</h2>
+                    <section class="section-container -team _flex -column -center -h -v _color -bgdarkgreen">
+                        <h2 class="title _color -white" id="team">L'équipe</h2>
                         <div class="teammembers-container _flex -wrap -center -h -v">
                             <div class="card-container -team _flex -column -center -h -v _text -center">
                                 <div class="shape-outer -rhombus">
@@ -201,8 +193,9 @@
                             <h3 class="title _color -white">Contactez-nous !</h3>
                             <div class="links-container">
                                 <a class="link -underline _color -white" href="mailto:coop@urcaguary.eu" title="Contacter Urcaguary par email">coop@urcaguary.eu</a>
-                                <a class="phonenumber link -underline _color -white" href="tel:+32498537407" title="Contacter Urcaguary par téléphone">+32 (0) 498 53 74 07</a>
+                                <a class="link -underline _color -white" href="tel:+32498537407" title="Contacter Urcaguary par téléphone">+32 (0) 498 53 74 07</a>
                             </div>
+                        </div>
                     </section>
                 </main>
                 <footer class="footer _color -bgdarkergreen">
