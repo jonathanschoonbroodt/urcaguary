@@ -544,7 +544,7 @@ input:disabled {
   display: none;
 }
 @media (max-width: 960px) {
-  .navbar-container.-opensmmenu {
+  .navbar-container.-openmenu {
     position: fixed;
     z-index: 999;
     overflow: scroll;
@@ -552,29 +552,29 @@ input:disabled {
     height: 100vh;
     background: hsl(0, 0%, 0%);
   }
-  .navbar-container.-opensmmenu .navbar-brand {
+  .navbar-container.-openmenu .navbar-brand {
     width: 100%;
   }
-  .navbar-container.-opensmmenu .navbar-brand .logo {
+  .navbar-container.-openmenu .navbar-brand .logo {
     display: flex;
   }
-  .navbar-container.-opensmmenu .navbar-list {
+  .navbar-container.-openmenu .navbar-list {
     display: none;
   }
-  .navbar-container.-opensmmenu .navbar-burger .burgerbutton.-closenavbar {
+  .navbar-container.-openmenu .navbar-burger .burgerbutton.-closenavbar {
     display: flex;
   }
-  .navbar-container.-opensmmenu .navbar-burger .burgerbutton.-opennavbar {
+  .navbar-container.-openmenu .navbar-burger .burgerbutton.-opennavbar {
     display: none;
   }
-  .navbar-container.-opensmmenu .smnavbar-container {
+  .navbar-container.-openmenu .smnavbar-container {
     display: flex;
     flex-flow: column;
     justify-content: center;
     width: 100%;
   }
-  .navbar-container.-opensmmenu .smnavbar-container .button,
-  .navbar-container.-opensmmenu .smnavbar-container .link {
+  .navbar-container.-openmenu .smnavbar-container .button,
+  .navbar-container.-openmenu .smnavbar-container .link {
     line-height: 1.5em;
     font-size: 1.5em;
     font-weight: bold;
